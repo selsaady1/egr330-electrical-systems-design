@@ -4,6 +4,8 @@
 
 ![MultiSim](https://img.shields.io/badge/MultiSim-0a7?style=flat-square) ![Analog Discovery board](https://img.shields.io/badge/Analog_Discovery_board-0a7?style=flat-square) ![Breadboard prototyping](https://img.shields.io/badge/Breadboard_prototyping-0a7?style=flat-square) ![Op-amps, diodes, capacitors (analog discrete circuits)](https://img.shields.io/badge/Op--amps%2C_diodes%2C_capacitors_%28analog_discrete_circuits%29-0a7?style=flat-square) ![Excel (efficiency plotting)](https://img.shields.io/badge/Excel_%28efficiency_plotting%29-0a7?style=flat-square) 
 
+![Design of Electrical Systems](images/fig1.png)
+
 ### 🌐 Live project page → **https://selsaady1.github.io/egr330-electrical-systems-design/**
 
 ## Overview
@@ -26,9 +28,16 @@ The team followed an engineering design process: defining a problem statement, e
 - Op-amps, diodes, capacitors (analog discrete circuits)
 - Excel (efficiency plotting)
 
+## Gallery
+![figure](images/fig2.png)
+![figure](images/fig3.png)
+![figure](images/fig4.png)
+![figure](images/fig5.png)
+
 ## Repository Structure
 ```
 .gitignore
+.nojekyll
 LICENSE
 README.md
 docs/2023-02-07_15-32-1.pdf
@@ -39,7 +48,14 @@ docs/EGR_330_Final_Design_Project_Idea.pdf
 docs/Laboratory_1.17_Week_1.docx
 docs/Laboratory_2.17_Week_3.docx_1_.pdf
 docs/Laboratory_4.17_Week_7.docx.pdf
+images/fig1.png
+images/fig2.png
+images/fig3.png
+images/fig4.png
+images/fig5.png
+images/fig6.png
 images/preview.png
+index.html
 ```
 
 ## Results

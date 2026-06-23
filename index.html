@@ -3,17 +3,19 @@
 <title>Design of Electrical Systems — Saif Elsaady</title><style>
 :root{--bg:#0d1117;--card:#161b22;--bd:#30363d;--fg:#e6edf3;--mut:#8b949e;--ac:#58a6ff;--mar:#8c1d40}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-a{color:var(--ac);text-decoration:none}.wrap{max-width:860px;margin:0 auto;padding:24px}
+a{color:var(--ac);text-decoration:none}.wrap{max-width:880px;margin:0 auto;padding:24px}
 .top{padding:14px 24px;border-bottom:1px solid var(--bd);font-size:.9rem}
-.hero{padding:40px 24px 8px;max-width:860px;margin:0 auto}
+.hero{padding:38px 24px 6px;max-width:880px;margin:0 auto}
 .cat{display:inline-block;background:var(--mar);color:#fff;font-size:.72rem;padding:3px 10px;border-radius:999px;letter-spacing:.04em}
 h1{margin:.4rem 0 .3rem;font-size:2rem}.tag{color:var(--mut);font-size:1.1rem;margin:0 0 14px}
 .metric{display:inline-block;background:#13241a;border:1px solid #1f6f43;color:#3fb950;padding:6px 14px;border-radius:8px;font-weight:700;margin:6px 0}
-.hero-img{margin:18px 0;border:1px solid var(--bd);border-radius:12px;overflow:hidden;max-height:380px;display:flex;justify-content:center;background:#0a0d12}
-.hero-img img{max-width:100%;object-fit:contain}
+.hero-img{margin:18px auto;border:1px solid var(--bd);border-radius:12px;overflow:hidden;max-width:880px;background:#0a0d12;display:flex;justify-content:center}
+.hero-img img{max-width:100%;max-height:460px;object-fit:contain}
 h2{font-size:1.15rem;border-left:4px solid var(--mar);padding-left:10px;margin-top:30px}
 ul{padding-left:20px}li{margin:6px 0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--card);border:1px solid var(--bd);border-radius:999px;padding:4px 12px;font-size:.85rem}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:12px}
+.gal img{width:100%;border:1px solid var(--bd);border-radius:8px;background:#0a0d12}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
 .btn{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 16px;font-weight:600}
 .btn:hover{border-color:var(--ac)}.btn.primary{background:var(--ac);color:#06101f;border-color:var(--ac)}
@@ -21,12 +23,14 @@ footer{color:var(--mut);font-size:.82rem;border-top:1px solid var(--bd);margin-t
 </style></head><body>
 <div class="top"><a href="https://selsaady1.github.io/portfolio/">← Portfolio</a> · <a href="https://github.com/selsaady1">github.com/selsaady1</a></div>
 <div class="hero"><span class="cat">Hardware &amp; Embedded</span><h1>Design of Electrical Systems</h1>
-<p class="tag">Analog peak detector network plus a semester of electrical systems labs</p><div class="hero-img"><img src="images/preview.png" alt=""></div></div>
+<p class="tag">Analog peak detector network plus a semester of electrical systems labs</p></div>
+<div class="wrap" style="padding-top:0"><div class="hero-img"><img src="images/fig1.png" alt=""></div></div>
 <div class="wrap">
 <h2>Overview</h2><p>Coursework from ASU EGR 330: Design of Electrical Systems (Spring 2023), centered on a five-person team final design project to build and validate a peak detector network. The repository pairs the full team report and final presentation with a sequence of weekly hands-on labs covering optocouplers, BJT amplifiers, logic gates, and switched-mode power supplies. Saif led the real-world applications research and authored and edited the final report.</p>
 <h2>Key Achievements</h2><ul><li>Designed, prototyped, and tested an analog peak detector network that captures the extreme (positive and negative) voltage of an input signal, evaluated two candidate designs before selecting a final build.</li><li>Validated input testing on the Analog Discovery board, recording peak detection across test signals (measured 1.98, 2.98, and 4.98 on three input cases).</li><li>Iterated the design by building a second circuit board with a switch and a capacitor-recharge path so the network could reset for new data, plus output buffering.</li><li>Completed weekly labs spanning optocoupler active-high/low and sinewave networks, a VDB Class A amplifier (measured Bdc = 183), an AND gate via cutoff/hard-saturation, and an LT1370-based SMPS boost converter with efficiency plotting.</li><li>Used MultiSim for circuit modeling and the Analog Discovery board for waveform generation and scope measurement.</li></ul>
 <h2>Approach</h2><p>The team followed an engineering design process: defining a problem statement, engineering goals, specifications and constraints (four-week timeline, limited provided budget), then evaluating multiple candidate designs against attributes and drawbacks. Circuits were modeled in MultiSim and breadboarded, then characterized with the Analog Discovery board for waveform input and oscilloscope output. Testing covered battery internal resistance and multi-signal input verification, with documented design changes justified by accuracy and reset requirements.</p>
 <h2>Tools &amp; Technologies</h2><div class="chips"><span class="chip">MultiSim</span><span class="chip">Analog Discovery board</span><span class="chip">Breadboard prototyping</span><span class="chip">Op-amps, diodes, capacitors (analog discrete circuits)</span><span class="chip">Excel (efficiency plotting)</span></div>
+<h2>Gallery</h2><div class="gal"><a href="images/fig2.png"><img src="images/fig2.png" loading="lazy" alt=""></a><a href="images/fig3.png"><img src="images/fig3.png" loading="lazy" alt=""></a><a href="images/fig4.png"><img src="images/fig4.png" loading="lazy" alt=""></a><a href="images/fig5.png"><img src="images/fig5.png" loading="lazy" alt=""></a><a href="images/fig6.png"><img src="images/fig6.png" loading="lazy" alt=""></a></div>
 <h2>Results</h2><p>The peak detector network was deemed successful: it evaluated battery internal resistance and displayed peak detection data via the Analog Discovery board across multiple input signals. Full methodology, testing data, and recommendations are in the team report (docs/EGR330_Report.pdf) and final presentation.</p>
 <div class="btns"><a class="btn primary" href="https://github.com/selsaady1/egr330-electrical-systems-design">⌨ View source on GitHub</a><a class="btn" href="docs/EGR330_Report.pdf">📄 View deliverable</a><a class="btn" href="https://selsaady1.github.io/portfolio/">All projects</a></div>
 </div>
